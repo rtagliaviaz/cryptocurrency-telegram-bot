@@ -1,0 +1,20 @@
+{
+  "name": "telegram-bot-tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./src index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "telegraf": "^4.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

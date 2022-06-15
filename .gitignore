@@ -1,0 +1,6 @@
+/node_modules
+post-en.md
+post[en].md
+.env
+test.http
+package-lock.json
