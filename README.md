@@ -1,6 +1,5 @@
 # cryptocurrency-telegram-bot
 a cryptocurrency telegram bot made with Node, Telegraf and coingecko api
-
 in this post we will learn how to create a cryptocurrency Telegram bot to obtain the values of the cryptocurrency we want to know using [Coingecko API](https://www.coingecko.com/en/api)
 
 To make this post I was inspired by this other one [How to make a cryptocurrency Telegram bot with Rust and Teloxide](https://dev.to/steadylearner/how-to-make-a-telegram-bot-with-rust-teloxide-m60) be sure to check it out, he creates very good content related to blockchain.
@@ -142,7 +141,7 @@ bot.launch()
 
 ## 3. Creating our commands <a name="creating-commands"></a>
 
-We don't want a bot just to say Welcome, so we need to create more commands, for this example i'll craete a `/help` command to get all the available commands, a `/currencies` command to get all the supported currencies and a `/crypto_price` to get the price of the selected cryptocurrency in the desired currency
+We don't want a bot just to say Welcome, so we need to create more commands, for this example i'll create a `/help` command to get all the available commands, a `/currencies` command to get all the supported currencies and a `/crypto_price` to get the price of the selected cryptocurrency in the desired currency
 
 - So let's start creating our **/help** command.
 
@@ -213,7 +212,7 @@ For this one as a user we will send a message like this `/crypto_price usd,eur b
 
 We need to create a conditional in case the user enters the data incorrectly, or in case the user does not send any data in the command. if this is the case we need to send the user a message, in this case i want him to remember how to use the command so i added an example.
 
-Now we are going to make the GET request to the API, we also going to check if the object from the response is empty, if its empty its because there was a spelling error, or some of the data was misplaced. If this is the case we will answer again telling the use how to use the command
+Now we are going to make the GET request to the API, we also going to check if the object from the response is empty, if its empty its because there was a spelling error, or some of the data was misplaced. If this is the case we will answer again telling the user how to use the command
 
 We are getting the data like this 
 
@@ -287,7 +286,7 @@ If you try **/crypto_price** command, you should get something like this
 ![crypto price 2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/djti58jgh9da4uj1zn4u.png)
 
 
-## 5. Deploying it to Heroku <a name="deploy-to-heroku"></a>
+## 4. Deploying it to Heroku <a name="deploy-to-heroku"></a>
 
 - we need to create a server
 
@@ -345,7 +344,7 @@ Now lets follow the steps below, **replace master by main** or won't let you `gi
 ![deployment main -> master](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ruq0nghsjhg2zklkt2k6.png)
 
 
-## 4. Conclusion <a name="conclusion"></a>
+## 5. Conclusion <a name="conclusion"></a>
 
 We learned how to make a cryptocurrency telegram bot using **telegraf** and node.js.
 
